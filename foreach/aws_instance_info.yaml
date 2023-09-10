@@ -1,0 +1,90 @@
+aws_instance_info = {
+  "ami" = "ami-03265a0778a880afb"
+  "arn" = "arn:aws:ec2:us-east-1:272499518069:instance/i-0ae8ece9fc8e366a4"
+  "associate_public_ip_address" = true
+  "availability_zone" = "us-east-1b"
+  "capacity_reservation_specification" = tolist([
+    {
+      "capacity_reservation_preference" = "open"
+      "capacity_reservation_target" = tolist([])
+    },
+  ])
+  "cpu_core_count" = 1
+  "cpu_threads_per_core" = 1
+  "credit_specification" = tolist([
+    {
+      "cpu_credits" = "standard"
+    },
+  ])
+  "disable_api_termination" = false
+  "ebs_block_device" = toset([])
+  "ebs_optimized" = false
+  "enclave_options" = tolist([
+    {
+      "enabled" = false
+    },
+  ])
+  "ephemeral_block_device" = toset([])
+  "get_password_data" = false
+  "hibernation" = false
+  "host_id" = tostring(null)
+  "iam_instance_profile" = ""
+  "id" = "i-0ae8ece9fc8e366a4"
+  "instance_initiated_shutdown_behavior" = "stop"
+  "instance_state" = "running"
+  "instance_type" = "t2.micro"
+  "ipv6_address_count" = 0
+  "ipv6_addresses" = tolist([])
+  "key_name" = ""
+  "launch_template" = tolist([])
+  "metadata_options" = tolist([
+    {
+      "http_endpoint" = "enabled"
+      "http_put_response_hop_limit" = 1
+      "http_tokens" = "optional"
+      "instance_metadata_tags" = "disabled"
+    },
+  ])
+  "monitoring" = false
+  "network_interface" = toset([])
+  "outpost_arn" = ""
+  "password_data" = ""
+  "placement_group" = ""
+  "placement_partition_number" = tonumber(null)
+  "primary_network_interface_id" = "eni-0f9b667769eb19568"
+  "private_dns" = "ip-172-31-41-237.ec2.internal"
+  "private_ip" = "172.31.41.237"
+  "public_dns" = "ec2-54-198-108-99.compute-1.amazonaws.com"
+  "public_ip" = "54.198.108.99"
+  "root_block_device" = tolist([
+    {
+      "delete_on_termination" = true
+      "device_name" = "/dev/sda1"
+      "encrypted" = false
+      "iops" = 100
+      "kms_key_id" = ""
+      "tags" = tomap({})
+      "throughput" = 0
+      "volume_id" = "vol-0b64236bea24542ba"
+      "volume_size" = 10
+      "volume_type" = "gp2"
+    },
+  ])
+  "secondary_private_ips" = toset([])
+  "security_groups" = toset([
+    "default",
+  ])
+  "source_dest_check" = true
+  "subnet_id" = "subnet-0de8652920bb9acd9"
+  "tags" = tomap(null) /* of string */
+  "tags_all" = tomap({})
+  "tenancy" = "default"
+  "timeouts" = null /* object */
+  "user_data" = tostring(null)
+  "user_data_base64" = tostring(null)
+  "user_data_replace_on_change" = false
+  "volume_tags" = tomap(null) /* of string */
+  "vpc_security_group_ids" = toset([
+    "sg-031848c9a99911e69",
+  ])
+}
