@@ -55,3 +55,35 @@ variable "database_route_table_tags" {
     Name = "roboshop-database"
   }
 }
+
+variable "sg_ingress_rules" {
+  default = [
+    {
+      from_port = 0
+      to_port = 0
+      protocol = "-1"
+      description = "allowing all traffic from internet"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  ]
+}
+
+variable "instances"{
+    type = map
+    default = {
+        MongoDB = "t3.medium"
+        MySQL = "t3.medium"
+        Catalogue = "t2.micro"
+        Cart = "t2.micro"
+        User = "t2.micro"
+        Redis = "t2.micro"
+        RabbitMQ = "t2.micro"
+        Shipping = "t2.micro"
+        Payment = "t2.micro"
+        Web = "t2.micro"
+    }
+}
+
+variable "zone_name" {
+  default = "nowheretobefound.online"
+}
