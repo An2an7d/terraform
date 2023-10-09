@@ -24,6 +24,18 @@ pipeline {
                 '''
             }
         }
+        stage('approve'){
+            steps{
+                input "shall I apply?"
+            }
+        }
+        stage('apply'){
+        steps{
+            sh '''
+            echo 'applied'
+            '''
+        }
+        }
     }
      post { 
         always { 
